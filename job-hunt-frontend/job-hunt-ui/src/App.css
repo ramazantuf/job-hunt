@@ -1,0 +1,161 @@
+.footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color:#3e729a;
+  text-align: center;
+  color: white;
+}
+
+.bg-image {
+  background-image: url("/src/assets/bg-img14.jpeg");
+}
+
+
+.container {
+  margin: 30px;
+  
+}
+
+
+.tb-shadow {
+  box-shadow: 0 0 10px 5px #888;
+  border-radius: 10px;
+  
+}
+
+.table-card {
+  border-radius: 50px;
+}
+
+.page-title {
+  text-decoration:underline;
+  text-underline-offset: 13px;
+}
+.par {
+  height: 200px;
+  width: 200px;
+  color: white;
+  background-color: black;
+}
+
+.navcolor {
+  background-color: #3e729a;
+}
+
+.shadowt {
+  box-shadow: inset -1px -1px 10px 3px #888;
+}
+
+.update-id{
+  color: rgb(255, 255, 0);
+}
+
+#logo {
+  width: 100%;
+  margin-top: 15px;
+  /*margin: 0 20px;*/
+}
+
+.navbar-brand {
+  margin-left:10px;
+  width: 10%;  
+}
+
+
+.container .btn {
+  background-color: #3e729a;
+  color: white;
+  box-shadow: 1px 1px 5px 1px rgba(113, 111, 111, 0.8);
+}
+
+.card .card-header{
+  background-color: #3e729a;
+}
+
+
+
+.icon-btn {
+  border: none;
+  background-color:transparent;
+  color: #29be2c;
+}
+
+
+.table-card {
+  margin-top: 50px;
+  width: 50%;
+}
+.navbar {
+  height: 70px;
+}
+
+
+
+.banner-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: overlay;
+  /*align-items: center;*/
+  padding-top: 100px;
+  padding-right: 500px;
+
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+
+.link-register {
+  margin-left: 250px;
+}
+
+
+#formsubmit { 
+  padding-left: 20px;
+}
+
+
+.home-btn {
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: transparent;
+  text-decoration: underline;
+  color: white;
+  text-decoration: none;
+}
+
+.home-btn a {
+  text-decoration: none;
+}
+
+.home-d {
+  padding-top: 20px;
+  color: white;
+  font-size: 13px;
+}
+
+.home-d p {
+  margin-left: 50px;
+  text-align:justify;
+
+}
+
+.home-span {
+  color: red;
+}
