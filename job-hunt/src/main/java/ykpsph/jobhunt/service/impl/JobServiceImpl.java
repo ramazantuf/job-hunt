@@ -89,6 +89,21 @@ public class JobServiceImpl implements JobService {
 
         job.setTitle(title);
 
+        // get the position
+        Position position = positionRepository.findById(jobDTO.getPositionId())
+                .orElseThrow(() -> new ResourceNotFound("Position is not found. id: "+jobDTO.getPositionId()));
+        job.setPosition(position);
+
+        // get the stage
+        Stage stage = stageRepository.findById(jobDTO.getStageId())
+                .orElseThrow(() -> new ResourceNotFound("Stage is not found. id: "+jobDTO.getStageId()));
+        job.setStage(stage);
+
+        // get the location
+        Location location = locationRepository.findById(jobDTO.getLocationId())
+                .orElseThrow(() -> new ResourceNotFound("Location is not found. id: "+jobDTO.getLocationId()));
+        job.setLocation(location);
+
         Job updatedJob = jobRepository.save(job);
 
 

@@ -24,22 +24,22 @@ const HeaderComponent = () => {
               {
                 isAuth && 
                 <ul className="navbar-nav">
-              <li className="nav-item font-monospace">
-                <NavLink to='/jobs' className="nav-link" style={{color:"white", fontSize:""}}>jobs</NavLink>
-              </li>
-              <li className="nav-item font-monospace">
-                <NavLink to='/titles' className="nav-link" style={{color:"white"}}>titles</NavLink>
-              </li>
-              <li className="nav-item font-monospace">
-                <NavLink to='/positions' className="nav-link" style={{color:"white"}}>positions</NavLink>
-              </li>
-              <li className="nav-item font-monospace">
-                <NavLink to='/stages' className="nav-link" style={{color:"white"}}>stages</NavLink>
-              </li>
-              <li className="nav-item font-monospace">
-                <NavLink to='/locations' className="nav-link" style={{color:"white"}}>locations</NavLink>
-              </li>
-            </ul>
+                  <li className="nav-item font-monospace">
+                    <NavLink to='/jobs' className="nav-link" style={{color:"white", fontSize:""}}>jobs</NavLink>
+                  </li>
+                  <li className="nav-item font-monospace">
+                    <NavLink to='/titles' className="nav-link" style={{color:"white"}}>titles</NavLink>
+                  </li>
+                  <li className="nav-item font-monospace">
+                    <NavLink to='/positions' className="nav-link" style={{color:"white"}}>positions</NavLink>
+                  </li>
+                  <li className="nav-item font-monospace">
+                    <NavLink to='/stages' className="nav-link" style={{color:"white"}}>stages</NavLink>
+                  </li>
+                  <li className="nav-item font-monospace">
+                    <NavLink to='/locations' className="nav-link" style={{color:"white"}}>locations</NavLink>
+                  </li>
+                </ul>
               }
           </div>
             <ul className="navbar-nav">

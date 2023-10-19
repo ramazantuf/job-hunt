@@ -7,7 +7,7 @@ public class PasswordEncoderImpl {
     public static void main(String[] args) {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-        System.out.println("yakup password: "+passwordEncoder.encode("yakup"));
+        System.out.println("yakup password: "+passwordEncoder.encode("password"));
         System.out.println("admin password: "+passwordEncoder.encode("admin"));
     }
 }

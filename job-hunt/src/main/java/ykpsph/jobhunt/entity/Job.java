@@ -36,15 +36,15 @@ public class Job {
     private Title title;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "positionId", nullable = false)
+    @JoinColumn(name = "position_id", nullable = false) //positionId
     private Position position;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "stageId", nullable = false)
+    @JoinColumn(name = "stage_id", nullable = false) // stageId
     private Stage stage;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "locationId", nullable = false)
+    @JoinColumn(name = "location_id", nullable = false) // locationId
     private Location location;
 
 }
