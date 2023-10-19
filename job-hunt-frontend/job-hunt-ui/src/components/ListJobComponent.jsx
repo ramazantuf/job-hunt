@@ -37,11 +37,11 @@ const ListJobComponent = () => {
     }
 
   return (
-    <div className='container'>
+    <div className='container stage-container'>
         <h2 className='text-center font-monospace page-title'>List of Job Applications</h2>
         <Link to='/add-job' className='btn mb-2'>new application</Link>
-        <div className="table-responsive tb-shadow">
-        <table className="table table-hover table-striped table-bordered">
+        <div className="table-responsive tb-shadow ">
+        <table className="table table-hover table-striped  table-bordered">
             <thead className='table-warning'>
                 <tr>
                     <th>#</th>
@@ -58,8 +58,14 @@ const ListJobComponent = () => {
             <tbody>
                 {
                     jobs.map(job => 
-                    <tr key={job.id}>
-                        <td>{job.id}</td>
+                    <tr key={job.id} >
+                        <td className={
+                            job.stageName === 'auto-reply' ? 'stage-auto-reply' : '' ||
+                            job.stageName ==='Technical Interview' ? 'stage-technical' : '' || 
+                            job.stageName === 'HR Interview' ? 'stage-hr' : '' ||
+                            job.stageName === 'ignored' ? 'stage-ignored' : ''
+                        }>{job.id}</td>
+
                         <td>{job.companyName}</td>
                         <td>{job.hirer}</td>
                         <td>{job.date}</td>

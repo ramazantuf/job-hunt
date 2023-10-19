@@ -8,6 +8,33 @@
   color: white;
 }
 
+.stage-auto-reply {
+  --bs-table-bg:#9e9e9eba;
+
+}
+.stage-technical {
+  --bs-table-bg: rgba(255, 21, 0, 0.637);
+}
+
+.stage-hr {
+  --bs-table-bg : #28a746bd;  
+}
+
+.stage-ignored {
+  --bs-table-bg : #ffc107a6;
+}
+
+/*
+primary: #007bff 
+secondary : #6c757d
+success : #28a745
+danger : #dc3545
+warning : #ffc107
+dark : #515457ba
+
+*/
+
+
 .bg-image {
   background-image: url("/src/assets/bg-img14.jpeg");
 }
@@ -138,6 +165,7 @@
   text-decoration: underline;
   color: white;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .home-btn a {
@@ -147,17 +175,21 @@
 .home-d {
   padding-top: 20px;
   color: white;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .home-d p {
-  margin-left: 50px;
+  margin: 0 auto;
   text-align:justify;
+  max-width: 600px;
+  line-height: 1.5;
 
 }
 
 .home-span {
   color: red;
 }
+
+
 
 
