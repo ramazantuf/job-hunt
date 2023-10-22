@@ -11,7 +11,25 @@ const ListJobComponent = () => {
 
     const navigator = useNavigate();
 
-   
+// Sort the table based on the Date
+const [sortedColumn, setSortedColumn] = useState(''); // Initially no column is sorted
+const [sortOrder, setSortOrder] = useState('asc'); // Initial sort order (ascending)
+
+const handleSortByDate = () => {
+    const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+    setSortOrder(newSortOrder);
+    setSortedColumn('date'); // Set the sorted column name
+  
+    // Sort the jobs array based on the "Date" column
+    const sortedJobs = [...jobs].sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return newSortOrder === 'asc' ? dateA - dateB : dateB - dateA;
+    });
+  
+    setJobs(sortedJobs); // Update the state with the sorted data
+  };
+
     useEffect(() => {
         listAllJobs();
     }, [])
@@ -47,7 +65,7 @@ const ListJobComponent = () => {
                     <th>#</th>
                     <th>Company</th>
                     <th>Hirer</th>
-                    <th>Date</th>
+                    <th className='stage-ignored' onClick={handleSortByDate}>Date {sortedColumn === 'date' && (sortOrder === 'asc' ? '↓' : '↑')}</th>
                     <th>Title</th>
                     <th>Position</th>
                     <th>Stage</th>
